@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>326</width>
+    <height>294</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>桥梁避碰终端配置工具包</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="winico.qrc">
+    <normaloff>:/img/image2.png</normaloff>:/img/image2.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">selection-background-color: rgb(178, 214, 247);
+background-image: url(:/img/image3.png);
+color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(0, 0, 0, 255), stop:0.05 rgba(14, 8, 73, 255), stop:0.36 rgba(28, 17, 145, 255), stop:0.6 rgba(126, 14, 81, 255), stop:0.75 rgba(234, 11, 11, 255), stop:0.79 rgba(244, 70, 5, 255), stop:0.86 rgba(255, 136, 0, 255), stop:0.935 rgba(239, 236, 55, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>10</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 14pt &quot;华文新魏&quot;;
+color: rgb(135, 135, 203);</string>
+    </property>
+    <property name="text">
+     <string>桥梁避碰终端配置工具包</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>326</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="config">
+    <property name="title">
+     <string>配置</string>
+    </property>
+    <addaction name="cfg_ohtl"/>
+    <addaction name="cfg_brtl"/>
+    <addaction name="cfg_brde"/>
+    <addaction name="cfg_ohde"/>
+   </widget>
+   <widget class="QMenu" name="other">
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="web"/>
+    <addaction name="caculate"/>
+    <addaction name="separator"/>
+    <addaction name="about"/>
+    <addaction name="exit"/>
+   </widget>
+   <addaction name="other"/>
+   <addaction name="config"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>配置</string>
+   </property>
+  </action>
+  <action name="About">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="cfg_ohtl">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="winico.qrc">
+     <normaloff>:/img/image2.png</normaloff>:/img/image2.png</iconset>
+   </property>
+   <property name="text">
+    <string>超高主机配置</string>
+   </property>
+  </action>
+  <action name="cfg_brtl">
+   <property name="icon">
+    <iconset resource="winico.qrc">
+     <normaloff>:/img/image2.png</normaloff>:/img/image2.png</iconset>
+   </property>
+   <property name="text">
+    <string>桥墩主机配置</string>
+   </property>
+  </action>
+  <action name="cfg_ohde">
+   <property name="icon">
+    <iconset resource="winico.qrc">
+     <normaloff>:/img/image2.png</normaloff>:/img/image2.png</iconset>
+   </property>
+   <property name="text">
+    <string>超高节点配置</string>
+   </property>
+  </action>
+  <action name="cfg_brde">
+   <property name="icon">
+    <iconset resource="winico.qrc">
+     <normaloff>:/img/image2.png</normaloff>:/img/image2.png</iconset>
+   </property>
+   <property name="text">
+    <string>桥墩节点配置</string>
+   </property>
+  </action>
+  <action name="web">
+   <property name="icon">
+    <iconset resource="winico.qrc">
+     <normaloff>:/img/image2.png</normaloff>:/img/image2.png</iconset>
+   </property>
+   <property name="text">
+    <string>经纬度查询</string>
+   </property>
+  </action>
+  <action name="exit">
+   <property name="icon">
+    <iconset resource="winico.qrc">
+     <normaloff>:/img/image2.png</normaloff>:/img/image2.png</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="caculate">
+   <property name="icon">
+    <iconset resource="winico.qrc">
+     <normaloff>:/img/image2.png</normaloff>:/img/image2.png</iconset>
+   </property>
+   <property name="text">
+    <string>经纬度进制转换</string>
+   </property>
+  </action>
+  <action name="about">
+   <property name="icon">
+    <iconset resource="winico.qrc">
+     <normaloff>:/img/image2.png</normaloff>:/img/image2.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="winico.qrc"/>
+ </resources>
+ <connections/>
+</ui>
